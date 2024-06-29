@@ -10,12 +10,19 @@ import matplotlib.pyplot as plt
 #plt.legend()
 #plt.show()
 
-plt.plot(4,2,'k+')
+#plt.plot(4,2,'k+')
+#plt.grid()
+#axis = plt.gca()
+#ylim = axis.get_ylim()
+#print(ylim)
+#axis.set_ylim(0.0, 5.2)
+
+plt.plot([0,0], [0,2],'g')
+plt.plot([0,2],[0,0], 'k')
+plt.plot([2,2], [0,2], 'r')
+plt.plot([0,2], [2,2], 'b')
+plt.plot([0,2], [0,2], 'y')
+
 plt.grid()
-axis = plt.gca()
-ylim = axis.get_ylim()
-print(ylim)
-axis.set_ylim(0.0, 5.2)
-
-
+plt.axis([-3,3,-3,3])
 plt.show()
